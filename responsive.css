@@ -1,0 +1,349 @@
+@media (min-width:320px) and (max-width:575px) {
+
+    /* Navbar responsive styles */
+    #hero-area {
+        padding: 100px 0 ;
+        position: static;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .logo .navbar-brand img {
+        width: 100px;
+    }
+
+    .navbar {
+        padding: 17px 20px;
+        display: flex;
+    }
+
+    .navbar .navbar-toggler {
+        border: none;
+    }
+
+    .navbar .nav-links {
+        background-color: var(--secondary-color);
+        padding: 20px 0;
+        border-radius: 20px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links .nav-link {
+        color: var(--white-color);
+        margin-left: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: transparent;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    .nab-button {
+        display: none;
+    }
+
+    /* Hero Area responsive styles */
+
+    #hero-area .hero-content h1 {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    #hero-area .hero-content p {
+        font-size: 18px;
+        width: 290px;
+    }
+
+    .side-content,
+    #digital-area .hero-icon {
+        display: none;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 18px;
+        font-size: 12px;
+    }
+    #hero-area .hero-cards {
+        position: static;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #hero-area .hero-cards .hero-card {
+        width: 90%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #hero-area .card-img-top {
+        width: 40%;
+        padding: 16px;
+        margin: 0 auto;
+    }
+
+    /* Digital-Area responsive styles */
+    #digital-area {
+        padding: 0;
+        position: static;
+    }
+
+    /* #digital-area .digital {
+        position: absolute;
+        top: -250px;
+    } */
+
+    #digital-area h2 {
+        width: 250px;
+        font-size: 30px;
+    }
+
+    #digital-area h4 {
+        font-size: 16px;
+    }
+
+    #digital-area .digital-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #digital-area .digital-wrapper img {
+        position: static;
+        width: 95%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #digital-area .digital-wrapper .digital-icon {
+        width: 20%;
+        height: 11%;
+        top: -50px;
+    }
+
+    #digital-area .digital-wrapper .digital-content {
+        padding: 10px 20px;
+        position: static;
+        width: 100%;
+    }
+
+    #digital-area .digital-wrapper .digital-content .cross-icon {
+        top: 270px;
+        right: 50px;
+    }
+
+    #digital-area .digital-wrapper h3 {
+        margin-top: 35px;
+        width: 296px;
+        font-size: 18px;
+    }
+
+    #digital-area .digital-wrapper p {
+        padding-right: 10px;
+        width: 250px;
+        font-size: 16px;
+    }
+
+    #digital-area .digital-wrapper .digital-content .experince-icon {
+        top: 500px;
+        width: 24%;
+        height: 40%;
+    }
+    /* Work-Area Responsible Style */
+    #work-area{
+    padding: 150px 0;
+    position: static;
+}
+/* #work-area .work{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+#work-area .experince-icon2{
+  display: none;
+}
+
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    #hero-area {
+        padding: 100px 0;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .logo .navbar-brand img {
+        width: 100px;
+    }
+
+    /* Navbar responsive styles */
+    .navbar {
+        padding: 20px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar .navbar-toggler {
+        border: none;
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        background-color: var(--secondary-color);
+        padding: 20px 0;
+        border-radius: 20px;
+        width: 50%;
+    }
+
+    .navbar .nav-links .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links .nav-link {
+        color: var(--white-color);
+        margin-left: 0;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        background-color: transparent;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        color: var(--white-color);
+        text-align: center;
+    }
+
+    .nab-button {
+        display: none;
+    }
+
+    #hero-area .hero-content h1 {
+        font-size: 45px;
+        width: 450px;
+        margin-top: 20px;
+    }
+
+    #hero-area .hero-content p {
+        font-size: 20px;
+        width: 450px;
+    }
+
+    .side-content,
+    #digital-area .hero-icon {
+        display: none;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 16px 18px;
+        font-size: 18px;
+    }
+
+    #hero-area .hero-cards {
+        position: static;
+        padding-bottom: 20px;
+    }
+
+    #hero-area .hero-cards .hero-card {
+        width: 75%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #hero-area .card-img-top {
+        width: 25%;
+        padding: 16px;
+        margin: 0 auto;
+    }
+    /* Digital-Area responsive styles */
+    #digital-area {
+        padding: 0;
+        position: relative;
+    }
+
+    #digital-area .digital {
+        position: absolute;
+        top: -80px;
+        width: 100%;
+    }
+
+    #digital-area h2 {
+        width: 400px;
+        font-size: 40px;
+    }
+
+    #digital-area h4 {
+        font-size: 20px;
+    }
+
+    #digital-area .digital-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #digital-area .digital-wrapper img {
+        position: static;
+        width: 95%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #digital-area .digital-wrapper .digital-icon {
+        width: 15%;
+        right: 0;
+    }
+
+    #digital-area .digital-wrapper .digital-content {
+        padding: 10px 20px;
+        position: static;
+        width: 100%;
+    }
+
+    #digital-area .digital-wrapper .digital-content .cross-icon {
+        top: 270px;
+        right: 50px;
+    }
+
+    #digital-area .digital-wrapper h3 {
+        margin-top: 35px;
+         width: 450px;
+        font-size: 30px;
+    }
+
+    #digital-area .digital-wrapper p {
+        padding-right: 10px;
+        width: 430px;
+        font-size: 20px;
+    }
+
+    #digital-area .digital-wrapper .digital-content .experince-icon {
+        top: 500px;
+        width: 16%;
+        height: 40%;
+    }
+
+}

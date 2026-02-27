@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    /* font-family: 'Poppins', sans-serif;
+    /* font-family: "Nunito", sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --primary-color: #FF5538;
+  --secondary-color: #29313D;
+  --text-color: #333333;
+  --bg-color: #fcf3f3;
+  --primary-bg-color: rgba(252,245,243,0.9);
+  --white-color: #FFFFFF;
+  
+}
+/* =====================================Common styles================================= */
+.container {
+    max-width: 1408px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+.btn-secondary {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    padding: 14px 28px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.btn-secondary:hover{
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+}
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    line-height: 140%;
+}
+ h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    line-height: 140%;
+}
+h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--primary-color);
+    font-family: "Poppins", sans-serif;
+}
+p{
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: "Nunito", sans-serif;
+    line-height: 200%;
+}
+/* Navbar disgn start */
+header {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.navbar{
+    background-color: transparent;
+    padding: 20px 30px;
+}
+.navbar .navbar-toggler {
+    border: none;
+    outline: none;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .nav-links .nav-link {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+.navbar .nav-links .nav-link .fa-angle-down{
+    margin-left: 10px;
+}
+li{
+    list-style: none;
+     padding: 20px 0;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    line-height: 120%;
+   
+}
+/* Hero Area disgn */
+#hero-area{
+    padding: 200px 0 300px 0;
+    background-image: url("./images/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#hero-area .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#hero-area .hero-content h1{
+    font-size: 64px;
+    width: 771px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 130%;
+    font-family: "Poppins", sans-serif;
+}
+#hero-area .hero-content p{
+    font-size: 18px;
+    color: var(--text-color);
+    width: 540px;
+    margin-bottom: 40px;
+    font-family: "Nunito", sans-serif;
+    line-height: 200%;
+}
+.btn-group .btn {
+    border-radius: 20px !important;
+}
+.nav-icon{
+    position: absolute;
+}
+.side-content{
+    display: flex;
+    justify-content: center;
+    gap: 58px;
+    margin: 25px;
+    position: absolute;
+    top: 371px;
+    left: -150px;
+    transform: rotate(270deg);
+}
+.side-content img{
+    position: fixed;
+    transform: rotate(450deg);
+    left: -46px;
+    top: -10px;
+    height: 52px;
+}
+.side-content span, .side-content p{
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+#hero-area .card-img-top{
+   width: 30%;
+    padding: 16px;
+} 
+#hero-area .hero-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    position: absolute;
+    top: 530px;
+}
+#hero-area .hero-cards .hero-card{
+    width: 25%;
+    margin: 0 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.025);
+    border-radius: 20px;
+    padding: 0;
+}
+
+/* Digital Marketing disgn */
+
+#digital-area{
+    padding: 200px 0;
+    position: relative;
+}
+
+#digital-area .hero-icon{
+    position: absolute;
+    top: -80px;
+}
+#digital-area h2{
+    width: 449px;
+}
+#digital-area .digital-wrapper{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+#digital-area .digital-wrapper img{
+    width: 50%;
+    height: 430px;
+    z-index: 1;
+}
+#digital-area .digital-wrapper .digital-icon {
+   width: 6%;
+    height: 29%;
+    position: absolute;
+    left: 34%;
+    top: -64px;
+    z-index: 1;
+}
+#digital-area .digital-wrapper .digital-content{
+    background-color: var(--primary-bg-color);
+    padding: 100px 50px 0 185px;
+    position: absolute;
+    right: 0;
+    width: 54%;
+    height: 550px;
+}
+#digital-area .digital-wrapper .digital-content .cross-icon{
+    position: absolute;
+    top: -104px;
+    right: 178px;
+    width: 15px;
+    height: 15px;
+}
+#digital-area .digital-wrapper .digital-content .experince-icon{
+   position: absolute;
+    top: 187px;
+    right: 0px;
+    width: 16%;
+    height: 100%;
+}
+#digital-area .digital-wrapper h3{
+    width: 570px;
+}
+
+#digital-area .digital-wrapper h3{
+    width: 570px;
+}
+#digital-area .digital-wrapper p{
+    width: 501px;
+}
+/* Work area disgn */
+#work-area{
+    padding: 150px 0;
+    position: relative;
+}
+#work-area .experince-icon2{
+    position: absolute;
+    top: -340px; 
+}
+#work-area .work-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#work-area .work-wrapper .work-content{
+    max-width: 653px;
+}
+.row{
+    position: relative;
+}
+.row .cross-icon{
+    position: absolute;
+    bottom: -78px;
+    right: -124px;
+    width: 40px;
+    height: 15px;
+}
+#work-area .card{
+    padding: 0;
+    margin: 20px 29px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.025);
+    overflow: hidden;
+    border-radius: 0;
+}
+#work-area .card img{
+    width: 100%;
+    height: 332px;
+    object-fit: cover;
+    border-radius: 0;
+}
+#work-area .card .card-body{
+    padding: 20px;
+}
+#work-area .card .card-body h4{
+    cursor: pointer;
+}
+/* Counting Numbers disgn */
+#counting-area{
+    padding: 150px 0;
+    background-color: var(--bg-color);
+    position: relative;
+}
+#counting-area .counting-numbers{
+    position: relative;
+}
+#counting-area .counting-number{
+    background-color: var(--white-color);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 37px 26px;
+    margin: 15px;
+}
+#counting-area .counting-numbers .dot{
+    width: 15px;
+    height: 20px;
+    background-color: #c087ee;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -90px;
+    right: 202px;
+}
+#counting-area .counting-content{
+    position: relative;
+}
+#counting-area .counting-content .works-icon{
+    position: absolute;
+    top: 12px;
+    right: -321px;
+    width: 60%;
+    height: 132%;
+}
+#counting-area .counting-content h2{
+    width: 570px;
+}
+#counting-area .counting-content p{
+    width: 550px;
+}
+/* Brand Area */
+#brand-area{
+    padding: 150px 0;
+}
+#brand-area h2{
+    width: 849px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+#brand-area .brand-names{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+#brand-area .brand-name{
+   background-color: var(--bg-color);
+   padding: 30px ;
+   margin: 0 29px;
+}
+/* Review Area */
+#review-area{
+    padding: 150px 0;
+    background-color: var(--primary-bg-color);
+}
+#review-area .review-content h2{
+   margin-bottom: 40px;
+}
+.mini-img{
+    margin-bottom: 40px;
+}
+.review-controls{
+    display: flex;
+    gap: 12px;
+}
+.review-controls i{
+    font-size: 24px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.review-controls .light-bg{
+    background-color: #ffddd7;
+}
+.carousel-indicators {
+    display: none;
+}
+/* Project- Area */
+#project-area{
+    padding: 40px 0;
+    background-color: #ffd7c8;
+    position: relative;
+}
+#project-area h6{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    color: #29313D;
+    line-height: 140%;
+}
+#project-area h2{
+    padding-bottom: 40px;
+}
+#project-area p{
+    padding:30px 0 ;
+    color: #29313D;
+    font-size: 20px;
+    line-height: 180%;
+    width: 1283px;
+    border-top: 1px solid #dfbeb3;
+}
+#project-area .project-icon1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26%;
+}
+#project-area .project-icon2{
+    position: absolute;
+    top: 92px;
+    right: 0px;
+    width: 11%;
+}
+/* Footer Area */
+#footer-area{
+    padding: 150px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#footer-area .footer-logo{
+    width: 180px;
+    margin-bottom: 30px;
+}
+#footer-area p{
+    width: 449px;
+}
+#footer-area h3{
+    margin-bottom: 48px;
+}
