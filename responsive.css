@@ -1,13 +1,25 @@
 @media (min-width:320px) and (max-width:575px) {
-
+    /* Common Css */
+    h2 {
+        width: 300px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    h3{
+        font-size: 30px;
+    }
+     h4 {
+        font-size: 16px;
+    }
+    
+    .nav-icon, .nab-button, .side-content,
+    #digital-area .hero-icon, #work-area .experince-icon2 {
+        display: none;
+    }
     /* Navbar responsive styles */
     #hero-area {
-        padding: 100px 0 ;
+        padding: 40px 0 ;
         position: static;
-    }
-
-    .nav-icon {
-        display: none;
     }
 
     .logo .navbar-brand img {
@@ -53,27 +65,18 @@
         text-align: center;
     }
 
-    .nab-button {
-        display: none;
-    }
-
     /* Hero Area responsive styles */
 
     #hero-area .hero-content h1 {
         font-size: 30px;
         width: 300px;
+        margin-top: 50px;
     }
-
     #hero-area .hero-content p {
-        font-size: 18px;
+        font-size: 14px;
         width: 290px;
+        margin: 15px 25px;
     }
-
-    .side-content,
-    #digital-area .hero-icon {
-        display: none;
-    }
-
     .btn-primary,
     .btn-secondary {
         padding: 12px 18px;
@@ -90,7 +93,7 @@
         margin-bottom: 20px;
         text-align: center;
     }
-
+   
     #hero-area .card-img-top {
         width: 40%;
         padding: 16px;
@@ -101,20 +104,6 @@
     #digital-area {
         padding: 0;
         position: static;
-    }
-
-    /* #digital-area .digital {
-        position: absolute;
-        top: -250px;
-    } */
-
-    #digital-area h2 {
-        width: 250px;
-        font-size: 30px;
-    }
-
-    #digital-area h4 {
-        font-size: 16px;
     }
 
     #digital-area .digital-wrapper {
@@ -131,9 +120,10 @@
     }
 
     #digital-area .digital-wrapper .digital-icon {
-        width: 20%;
+        width: 25%;
         height: 11%;
         top: -50px;
+        right: 0;
     }
 
     #digital-area .digital-wrapper .digital-content {
@@ -146,7 +136,9 @@
         top: 270px;
         right: 50px;
     }
-
+    #digital-area h2 {
+    width: 350px;
+}
     #digital-area .digital-wrapper h3 {
         margin-top: 35px;
         width: 296px;
@@ -166,16 +158,12 @@
     }
     /* Work-Area Responsible Style */
     #work-area{
-    padding: 150px 0;
+    padding: 40px 0;
     position: static;
 }
-/* #work-area .work{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
-#work-area .experince-icon2{
-  display: none;
+#work-area .work-wrapper {
+    display: block;
+    margin-bottom: 40px;
 }
 
 }
@@ -243,7 +231,7 @@
     #hero-area .hero-content h1 {
         font-size: 45px;
         width: 450px;
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     #hero-area .hero-content p {
@@ -281,13 +269,10 @@
     /* Digital-Area responsive styles */
     #digital-area {
         padding: 0;
-        position: relative;
     }
 
     #digital-area .digital {
-        position: absolute;
-        top: -80px;
-        width: 100%;
+        position: static;
     }
 
     #digital-area h2 {
@@ -307,15 +292,17 @@
 
     #digital-area .digital-wrapper img {
         position: static;
-        width: 95%;
+        width: 80%;
         height: 200px;
-        margin: 0 auto;
+        margin: 20px;
     }
 
     #digital-area .digital-wrapper .digital-icon {
-        width: 15%;
-        right: 0;
-    }
+    width: 19%;
+    height: 12%;
+    position: absolute;
+    left: 267px;
+}
 
     #digital-area .digital-wrapper .digital-content {
         padding: 10px 20px;
@@ -340,10 +327,28 @@
         font-size: 20px;
     }
 
-    #digital-area .digital-wrapper .digital-content .experince-icon {
-        top: 500px;
-        width: 16%;
-        height: 40%;
-    }
+   #digital-area .digital-wrapper .digital-content .experince-icon {
+    top: 500px;
+    width: 17%;
+    height: 52%;
+    right: 42px;
+}
+       /* Work-Area Responsible Style */
+    #work-area{
+    padding: 40px 0;
+    position: static;
+}
+#work-area .work-wrapper {
+    display: block;
+    margin-bottom: 40px;
+}
+#work-area h2{
+    width: 400px;
+    font-size: 36px;
+}
+#work-area .btn-secondary{
+    padding: 16px 18px;
+    font-size: 16px;
+}
 
 }
